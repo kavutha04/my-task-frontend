@@ -1,6 +1,6 @@
 
 
-function ToDo({task, onDeleteTask, people, categories, assignPerson}){
+function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
 
 
     //Handles the delete function for tasks
@@ -69,4 +69,4 @@ function ToDo({task, onDeleteTask, people, categories, assignPerson}){
     )
 }
 
-export default ToDo;
+export default TaskCard;

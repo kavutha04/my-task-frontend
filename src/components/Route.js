@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import PersonList from './PersonList'
 import App from './App'
+import Home from "./Home"
+import LogOut from "./LogOut"
 
 
 

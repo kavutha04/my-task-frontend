@@ -32,12 +32,18 @@ function PersonList({people, addPerson, deletePerson}) {
     /************************************** */
     
     return (
-        <div id="person-container">
-            <h4><u>Household</u></h4>
-            <form onSubmit={handleSubmit}>
+        <div id="">
+            <div class="text-center bg-">
+            <h4><u>Add Your Name</u></h4>
+            <form class="border border-5 border-info rounded-pill" onSubmit={handleSubmit}>
+                <label class ="form-label">New User</label>
+                <br></br>
                 <input id="new-person-input" type="text" placeholder="Add new person..." value={newPerson} onChange={handleChange}></input>
-                <input id="submit-person" type="submit" value="submit"></input>
+                <br></br>
+                <br></br>
+                <input class="btn btn-outline-info" id="submit-person" type="submit" value="Add User"></input>
             </form>
+            </div>
             <ul id="person-ul-container">
                 {people.map((person) => {
                     return(

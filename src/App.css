@@ -1,4 +1,10 @@
-/* App */
+body{
+  max-height: 100%;
+}
+
+
+
+/* App
 .App {
   text-align: center;
 }
@@ -20,7 +26,7 @@ button {
 /******************************/
 
 /* Task elements */
-.task-list-item {
+/* .task-list-item {
   list-style: none;
   font-size: 30px;
 }
@@ -67,8 +73,8 @@ button {
 
 .category-select {
   margin-bottom: 10px;
-  display: flexbox;
-}
+  display: flexbox; */
+/* }
 
 .delete-cont {
   background-color:burlywood;
@@ -82,14 +88,15 @@ button {
   background-color: aqua;
   border-radius: 20px;
   width: 80%;
-  margin: auto;
-}
+  margin: auto; */
+/* } */
 /*******************************************/
 
 /* People elements */
 
-.person-select {
+/* .person-select {
   margin-left: 10px;
+
 }
 
 #person-ul-container {
@@ -110,9 +117,8 @@ button {
 }
 
 #new-person-input {
-  width: 50%;
-}
-/********************************/
+  width: 50%; */
+/* }  */
 
 
 

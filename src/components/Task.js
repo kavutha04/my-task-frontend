@@ -5,6 +5,7 @@ function Task({tasks, onDeleteTask, people, categories, assignPerson, onSort}){
     //Maps task data and passes keys and values as props to TaskCard component
     let allTasks = tasks.map((task, i) => {
         return (
+            
             <TaskCard 
             key={i}
             task={task}
@@ -33,8 +34,10 @@ function Task({tasks, onDeleteTask, people, categories, assignPerson, onSort}){
     
     return (
         <div id="task-list">
+            
             <button class="sort-tasks" onClick={handleNameSort}>Sort by name</button>
             <button class="sort-tasks" onClick={handleDateSort}>Sort by date created</button>
+            
             {allTasks}
         </div>
     )

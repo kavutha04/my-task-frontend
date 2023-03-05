@@ -56,13 +56,15 @@ function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
 
     return (
         <div>
+            
             <li class="task-list-item">{task.name}</li>
             <li class="task-list-category">Category: {catName}</li>
             <li class="task-list-person">Assigned To: {person}</li>
+            <li class="task-list-person ">Reassign</li>
             {people.map((person) => <button class="person-selecter-button" name="person" onClick={handleAssign} key={person.id} value={person.id}>{person.name}</button>)}
             <br></br>
             <div class="delete-cont">
-                <button class="delete-btn" onClick={handleDelete}>Done</button>
+                <button class="delete-btn" onClick={handleDelete}>Complete</button>
             </div>
             <hr></hr>
         </div>

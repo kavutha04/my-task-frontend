@@ -44,6 +44,7 @@ function PersonList({people, addPerson, deletePerson}) {
                 <input class="btn btn-outline-info" id="submit-person" type="submit" value="Add User"></input>
             </form>
             </div>
+            <h4 class="badge fs-4 bg-secondary">USERS</h4>
             <ul id="person-ul-container">
                 {people.map((person) => {
                     return(

@@ -99,11 +99,12 @@ function handleSort(sortedTasks){
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Let's Manage These Tasks</h1>
+    <div className="app">
+      
+      
+        <h1 class="badge bg-info text-dark fs-1">Let's Manage These Tasks</h1>
         <List tasks={taskData} categories={categoryData} people={peopleData} onSort={handleSort} assignPerson={handleUpdatePerson} onAddTask={handleAddTask} onDeleteTask={handleDeleteTask} addPerson={handleAddPerson} deletePerson={handleDeletePerson} />
-      </header>
+      
     </div>
   );
 }

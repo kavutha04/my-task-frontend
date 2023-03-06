@@ -66,7 +66,7 @@ function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
                   <h6 class=" ">Reassign</h6>
                   {people.map((person) => (
                     <button
-                      class=""
+                      class="btn btn-info"
                       name="person"
                       onClick={handleAssign}
                       key={person.id}
@@ -77,8 +77,8 @@ function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
                   ))}
                   <br />
                   <div class="delete-cont">
-                    <button class="btn btn-outline-danger" onClick={handleDelete}>
-                      Complete
+                    <button class="btn btn-outline-dark" onClick={handleDelete}>
+                      Completed
                     </button>
                   </div>
                 </div>

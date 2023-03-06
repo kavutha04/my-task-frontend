@@ -41,7 +41,7 @@ function PersonList({people, addPerson, deletePerson}) {
                 <input id="new-person-input" type="text" placeholder="Add new person..." value={newPerson} onChange={handleChange}></input>
                 <br></br>
                 <br></br>
-                <input class="btn btn-outline-info" id="submit-person" type="submit" value="Add User"></input>
+                <input class="btn btn-info" id="submit-person" type="submit" value="Add User"></input>
             </form>
             </div>
             <h4 class="badge fs-4 bg-secondary">USERS</h4>

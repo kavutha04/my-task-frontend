@@ -20,7 +20,7 @@ function Task({tasks, onDeleteTask, people, categories, assignPerson, onSort}){
 
     //Grabs the sorted data from API server
     function handleNameSort(){
-        fetch("https://task-manager-ifbi.onrender.com/alpha")
+        fetch("https://task-manager-ifbi.onrender.com/tasks/alpha")
             .then(res => res.json())
             .then(sortedTasks => onSort(sortedTasks))
     }

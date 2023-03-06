@@ -15,7 +15,7 @@ function App() {
 
   //Import tasks
   useEffect(() => {
-    fetch("http://localhost:9292/tasks")
+    fetch("https://task-manager-ifbi.onrender.com/tasks")
       .then((res) => res.json())
       .then((tasks) => {
         if (refTask === true){
@@ -28,7 +28,7 @@ function App() {
 
 //Import people
   useEffect(() => {
-    fetch("http://localhost:9292/people")
+    fetch("https://task-manager-ifbi.onrender.com/people")
       .then((res) => res.json())
       .then((people) => {
         if (refPeople === true){
@@ -41,7 +41,7 @@ function App() {
 
   //Import categories
   useEffect(() => {
-    fetch("http://localhost:9292/categories")
+    fetch("https://task-manager-ifbi.onrender.com/categories")
       .then((res) => res.json())
       .then(categories => {
         if (refCategory === true){

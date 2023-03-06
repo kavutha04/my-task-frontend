@@ -14,7 +14,7 @@ function PersonList({people, addPerson, deletePerson}) {
     function handleSubmit(e) {
         e.preventDefault();
 
-        fetch('http://localhost:9292/people', {
+        fetch('https://task-manager-ifbi.onrender.com/people', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

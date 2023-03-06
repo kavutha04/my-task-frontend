@@ -4,7 +4,7 @@ function PersonCard({person, deletePerson}) {
 
 //Handles the delete function for People
     function handleDelete(){
-        fetch(`http://localhost:9292/people/${person.id}`, {
+        fetch(`https://task-manager-ifbi.onrender.com/people/${person.id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

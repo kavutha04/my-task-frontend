@@ -5,7 +5,7 @@ function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
 
     //Handles the delete function for tasks
     function handleDelete(){
-        fetch(`http://localhost:9292/tasks/${task.id}`, {
+        fetch(`https://task-manager-ifbi.onrender.com/tasks/${task.id}`, {
             method: "DELETE"
         })
             .then((res) => res.json())
@@ -37,7 +37,7 @@ function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
     //Handles selection change for person assigned to task
     function handleAssign(e){
         
-        fetch(`http://localhost:9292/tasks/${task.id}`, {
+        fetch(`https://task-manager-ifbi.onrender.com/tasks/${task.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

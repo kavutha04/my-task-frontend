@@ -33,12 +33,15 @@ function Task({tasks, onDeleteTask, people, categories, assignPerson, onSort}){
     /******************************************* */
     
     return (
-        <div id="task-list">
-            
-            <button class="sort-tasks" onClick={handleNameSort}>Sort by name</button>
-            <button class="sort-tasks" onClick={handleDateSort}>Sort by date created</button>
-            
+        <div id="task-list" class="">
+            <h3 class="text-center bg-info" >TASKS</h3>
+            <button class="btn btn-dark" onClick={handleNameSort}>Sort Alphabetically</button>
+            <div class="text-end">
+            <button class=" btn btn-dark" onClick={handleDateSort}>Sort by date created</button>
+            </div>
+            <div class="row row-cols-md-4 ">
             {allTasks}
+            </div>
         </div>
     )
 }

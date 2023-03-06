@@ -37,19 +37,22 @@ function AddToDo({onAddTask, categories, people}) {
     /******************************** */
 
     return (
-        <div id="add-todo">
+        <div id="">
             <form onSubmit={handleSubmit}>
-                <label id="new-task-title" for="new-task"><strong>Add a New Task:</strong></label>
-                <input id="new-task" type="text" name="name" placeholder="Enter a task..." value={formData.name} onChange={handleChange}></input>
-                <input id="submit-task" type="submit" value="Submit" ></input>
-                <select name="category" class="category-select" onChange={handleChange}>
+                <div class="mb-3 text-center">
+                <label class=""id="new-task-title" for="new-task">Add a New Task:</label>
+                <input id="new-task" class="form-control" type="text" name="name" placeholder="Enter a task..." value={formData.name} onChange={handleChange}></input>
+                
+                <select name="category" class="form-select" onChange={handleChange}>
                     <option placeholder="Select a category">--- Select a category ---</option>
                     {categories.map((category) => <option key={category.id} value={category.id}>{category.name}</option>)}
                 </select>
-                <select name="person" class="person-select" onChange={handleChange}>
+                <select name="person" class="form-select" onChange={handleChange}>
                     <option placeholder="Assign to">--- Assign to ---</option>
                     {people.map((person) => <option key={person.id} value={person.id}>{person.name}</option>)}
                 </select>
+                <input id="submit-task" class="" type="submit" value="Submit" ></input>
+                </div>
             </form>
         </div>
     )

@@ -55,20 +55,40 @@ function TaskCard({task, onDeleteTask, people, categories, assignPerson}){
 
 
     return (
-        <div>
-            
-            <li class="task-list-item">{task.name}</li>
-            <li class="task-list-category">Category: {catName}</li>
-            <li class="task-list-person">Assigned To: {person}</li>
-            <li class="task-list-person ">Reassign</li>
-            {people.map((person) => <button class="person-selecter-button" name="person" onClick={handleAssign} key={person.id} value={person.id}>{person.name}</button>)}
-            <br></br>
-            <div class="delete-cont">
-                <button class="delete-btn" onClick={handleDelete}>Complete</button>
+        <div class="container">
+        <div class="row">
+          <div class="">
+              <div class="card bg-light border">
+                <div class="card-body text-center">
+                  <h3 class="card-title">{task.name}</h3>
+                  <h5 class="card-text">Category: {catName}</h5>
+                  <p class="card-text">Assigned To: {person}</p>
+                  <h6 class=" ">Reassign</h6>
+                  {people.map((person) => (
+                    <button
+                      class=""
+                      name="person"
+                      onClick={handleAssign}
+                      key={person.id}
+                      value={person.id}
+                    >
+                      {person.name}
+                    </button>
+                  ))}
+                  <br />
+                  <div class="delete-cont">
+                    <button class="btn btn-outline-danger" onClick={handleDelete}>
+                      Complete
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr></hr>
+          
         </div>
-    )
-}
+      </div>
+      
+    
+    )}
 
 export default TaskCard;
